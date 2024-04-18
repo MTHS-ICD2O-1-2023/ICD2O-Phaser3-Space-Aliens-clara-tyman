@@ -1,8 +1,9 @@
 /* global Phaser */
+
 // Copyright (c) 2024 Clara Tyman All rights reserved
 //
 // Created by: Clara
-// Created on: march 2024
+// Created on: April 2024
 // This is the Phaser3 configuration file
 
 //* Game scene
