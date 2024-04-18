@@ -1,8 +1,21 @@
 /* global Phaser */
+// Copyright (c) 2024 Clara Tyman All rights reserved
+//
+// Created by: Clara
+// Created on: march 2024
+// This is the Phaser3 configuration file
+
+//* Game scene
 const config = {
   type: Phaser.AUTO,
   width: 1920,
   height: 1080,
+  physics: {
+    defualt: 'arcade',
+    arcade: {
+      debug: true
+    }
+  },
   backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
