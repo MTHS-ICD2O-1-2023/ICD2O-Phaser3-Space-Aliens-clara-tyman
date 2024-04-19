@@ -6,7 +6,13 @@
 // Created on: April 2024
 // This is the Phaser3 configuration file
 
-//* Game scene
+// scene import statements
+import SplashScene from './splashScene.js'
+
+// create new game scene
+const splashScene = new SplashScene
+
+//* Game scene */
 const config = {
   type: Phaser.AUTO,
   width: 1920,
@@ -23,5 +29,12 @@ const config = {
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
 }
+
 const game = new Phaser.Game(config)
-console.log(game)
+console.log("Game start point")
+
+// load scenes
+game.scene.add('splashScene', splashScene)
+
+game.scene.start("splashScene")
+
