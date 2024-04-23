@@ -6,17 +6,17 @@
 // Created on: April 2024
 // This is the Splash Scene
 
-class SplashScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   constructor() {
-    super({ key: "splashScene" })
+    super({ key: "titleScene" })
   }
 
-  init (data) {
+  init(data) {
     this.cameras.main.setBackgroundColor("ffffff")
   }
 
   preload() {
-    console.log("Splash Scene")
+    console.log("Title Scene")
   }
 
   create(data) {
@@ -24,8 +24,8 @@ class SplashScene extends Phaser.Scene {
   }
 
   update(time, delta) {
-    this.scene.switch("titleScene")
+    // pass
   }
 }
 
-export default SplashScene
+export default TitleScene
