@@ -4,7 +4,7 @@
 //
 // Created by: Clara
 // Created on: April 2024
-// This is the Splash Scene
+// This is the Title Scene
 
 class TitleScene extends Phaser.Scene {
   constructor() {
@@ -41,7 +41,9 @@ class TitleScene extends Phaser.Scene {
   }
 
   update(time, delta) {
-    // pass
+      if (time > 6000) {
+      this.scene.switch("menuScene")
+    }
   }
 }
 
